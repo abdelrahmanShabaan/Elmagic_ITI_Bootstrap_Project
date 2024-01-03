@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <section id="inputdetalis" class="bg-dark w-100 vh-100 overflow-hidden">
+      <div class="w-75 bg-dark mx-auto p-5 m-5 shadow-lg">
+        <h1 class="text-center">welcome</h1>
+<!-- start 3 input -->
+        <input type="text" placeholder="Enter your name"class="form-control mb-3 bg-dark "
+          id="Name" 
+
+        />
+        <p id="usernameAlert" class="d-none text-danger"> starting with at least 3 letters  </p>
+
+
+        <input
+          type="text "
+          placeholder="Enter your email"
+          class="form-control mb-3 bg-dark"
+          id="email" 
+          
+        />
+        <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+
+        <input
+          type="password"
+          placeholder="Enter password"
+          class="form-control mb-3 bg-dark"
+          id="pass" 
+        />
+
+        <p id="userPasswordAlert" class="d-none text-danger m-0">you must strenth your password, from start with 3 to 15 characters</p>
+        <p class="text-danger d-none mb-0" id="accountExistMsg">this account is exist ! Try another one.</p>
+        <!-- end 3 input -->
+     
+       
+      
+<img src="./img/lap1.jpg" alt="">
+<!-- start button -->
+        <div class="d-grid gap-2 d-flex justify-content-lg-center">
+
+          <button
+          class="btn btn-outline-info w-50 fw-bolder"
+          type="button"
+          onclick="create() "
+        >
+        Sign up
+        </button>
+
+
+        </div>
+      <!-- end button -->
+        <p class="text-white text-center">
+          You have an account?
+          <a class="text-white text-decoration-none" href="signin.html"> <span>Signin</span></a>
+        </p>
+      </div>
+    </section>
+    <script src="js/login.js"></script>
+  </body>
+  l
+</html>

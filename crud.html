@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  
+  <body>
+    <section  class="bg-dark crud  ">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container shadow-lg m-auto">
+              <a class="navbar-brand" href="#">    <h1 id="welcome">Welcome</h1>  </a>
+            
+                    
+            
+                  
+                  <button class="btn btn-outline-warning" onclick="log()" type="submit" href="./signin.html">logout</button>
+        
+              </div>
+            </div>
+          </nav>
+     <!-- start input  -->
+     <div class="w-75 mx-auto p-5 m-5 shadow-lg">
+      <h1>CRUD SYSTEM</h1>
+      <label>productName:</label>
+      <input type="text" onblur="validateProduct()" class="form-control mb-3" id="productName"  placeholder="Dell...">
+      <label>productCategory:</label>
+      <input type="text" class="form-control mb-3" id="productCategory" onblur="validateProduct()"  placeholder="Laptop " >
+      <label>productImg:</label>
+      <input type="file" class="form-control mb-3" id="productImg"    placeholder="Choose Img" >
+      <label>productPrice:</label>
+      <input type="number" class="form-control mb-3" id="productPrice" onblur=" validateProduct()"  placeholder="3000 ">
+      <label>Stock Quantity:</label>
+      <input type="number" class="form-control mb-3" id="Stock Quantity"  placeholder="20">
+      <label>productDescription</label>
+      <textarea class="form-control mb-3" id="productDesc" onblur="validateProduct()"  placeholder="search..." ></textarea>
+      <button  class="btn btn-primary" id="addProduct">AddProduct</button>
+      <button class="btn btn-danger" onclick="clearForm()">clear</button>
+  </div>
+   <!-- end input -->
+   <!-- start search -->
+  <input onkeyup="searchProdct()"  id="searchValue" type="text" placeholder="search..." class="form-control my-5 w-50 mx-auto">
+<!-- end search -->
+<!-- start table -->
+  <table class="table w-75 mx-auto">
+    <thead>
+        <th >ID</th>
+        <th>name</th>
+        <th>Category</th>
+        <th>Image</th>
+        <th>price</th>
+
+        <th> Quantity</th>
+        <th>desc</th>
+        <th>update</th>
+        <th>delete</th>
+    </thead>
+    <tbody id="tableBody">
+  
+    </tbody>
+  </table>
+  <!-- end table -->
+</section>
+    <script src="js/login.js"></script>
+    <script src="js/crud.js"></script>
+   
+  </body>
+</html>
